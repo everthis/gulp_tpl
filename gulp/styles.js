@@ -20,6 +20,8 @@ gulp.task('styles', function () {
     config_file: './config.rb',
     css: conf.paths.tmp + '/serve/app',
     sass: conf.paths.src + '/app',
+    image: conf.paths.src + '/assets/images',
+    generated_images_path: conf.paths.tmp + '/serve/app',
     sourcemap: true,
     debug: true
   };
