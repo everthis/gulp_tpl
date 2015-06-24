@@ -10,8 +10,8 @@ var $ = require('gulp-load-plugins')({
 
 gulp.task('partials', function () {
   return gulp.src([
-    path.join(conf.paths.src, '/app/**/*.html'),
-    path.join(conf.paths.tmp, '/serve/app/**/*.html')
+    path.join(conf.paths.src, '/**/*.html'),
+    path.join(conf.paths.tmp, '/**/*.html')
   ])
     .pipe($.minifyHtml({
       empty: true,
@@ -38,7 +38,7 @@ gulp.task('html', ['inject', 'partials'], function () {
   var cssFilter = $.filter('**/*.css');
   var assets;
 
-  return gulp.src(path.join(conf.paths.tmp, '/serve/*.html'))
+  return gulp.src(path.join(conf.paths.tmp, '/**/*.html'))
     .pipe($.inject(partialsInjectFile, partialsInjectOptions))
     .pipe(assets = $.useref.assets())
     .pipe($.rev())

@@ -1,8 +1,8 @@
 preferred_syntax = :scss
 http_path = '/'
-css_dir = 'public/stylesheets'
-sass_dir = 'js/sass'
-images_dir = 'public/images'
-fonts_dir = 'public/fonts'
+css_dir = '.tmp/styles'
+sass_dir = 'src/styles'
+images_dir = 'src/images'
+fonts_dir = 'src/fonts'
 relative_assets = true
 line_comments = true
