@@ -23,7 +23,8 @@ gulp.task('styles', function () {
     image: conf.paths.src + '/images',
     generated_images_path: conf.paths.tmp + '/images',
     sourcemap: true,
-    debug: true
+    logging: false
+    // debug: true
   };
 
   var injectFiles = gulp.src([
